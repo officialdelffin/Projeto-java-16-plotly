@@ -36,6 +36,14 @@ public class Movie {
 
     // Métodos :
 
+    public void playMovie () {
+
+
+
+        System.out.println("O filme " + title + " está rodando.");
+
+
+    }
 
 
 }
