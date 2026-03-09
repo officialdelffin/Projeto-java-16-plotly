@@ -1,8 +1,9 @@
 
-
+// Pacote :
 package br.com.plotly.model;
 
 
+// Classe responsável pela criação do objeto Movie :
 public class Movie {
 
 
