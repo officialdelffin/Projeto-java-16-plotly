@@ -8,7 +8,20 @@ public class Movie {
 
     // Construtores :
 
-    public Movie (String title , int year, int released, int runtime, String genre, String write, String plot) {}
+    public Movie (String title , int year, int released, int runtime, String genre, String write, String plot) {
+
+
+        // Vinculando parametros com os atributos :
+        this.title = title;
+        this.year = year;
+        this.released = released;
+        this.runtime = runtime;
+        this.genre = genre;
+        this.write = write;
+        this.plot = plot;
+
+
+    }
 
 
     // Atributos :
@@ -22,6 +35,7 @@ public class Movie {
 
 
     // Métodos :
+
 
 
 }
