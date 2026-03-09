@@ -3,6 +3,7 @@
 package br.com.plotly.exception;
 
 
+import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -16,17 +17,26 @@ public class QueryException {
     private String path;
 
 
-    // Configurando o agente que vai pegar a query e trazer um response :
-    HttpClient client = HttpClient.newHttpClient();
+    public void consutationTitle (String path) throws IOException, InterruptedException {
 
 
-    // Configurando a request :
-    HttpRequest request = HttpRequest.newBuilder()
+        // Atribuindo parametros com os atributos :
+        this.path = path;
 
-            .uri(URI.create(path))
-            .build();
+        // Configurando o agente que vai pegar a query e trazer um response :
+        HttpClient client = HttpClient.newHttpClient();
 
-    HttpResponse<String> response = client;
+
+        // Configurando a request :
+        HttpRequest request = HttpRequest.newBuilder()
+
+                .uri(URI.create(path))
+                .build();
+
+        HttpResponse<String> response = client;
+
+
+    }
 
 
 
