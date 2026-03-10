@@ -11,6 +11,8 @@ public class Menu {
 
     // Atributos :
     private String responseUser;
+    private String nameMovie;
+    private String path;
 
 
     // Instancias :
@@ -39,10 +41,15 @@ public class Menu {
 
 
     // Função responsável por criar o path :
-    public void pathCreate () {
+    public void pathCreate (String nameMovie) {
 
 
+        // Atribuindo paramentros na variavel :
+        this.nameMovie = nameMovie;
 
+
+        // Definindo o path
+        path = "https://www.omdbapi.com/?t=" + this.nameMovie + "&apikey=49ebfa25";
 
 
     }
