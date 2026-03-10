@@ -30,8 +30,19 @@ public class Menu {
                 
                 """);
 
+
         // Armazenando a escolher do user :
         responseUser = inputUser.nextLine();
+
+
+    }
+
+
+    // Função responsável por criar o path :
+    public void pathCreate () {
+
+
+
 
 
     }
