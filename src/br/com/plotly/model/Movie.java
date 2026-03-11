@@ -55,4 +55,21 @@ public class Movie {
     }
 
 
+    // Sobreescrevendo o metodo toString dos Movies :
+    @Override
+    public String toString() {
+
+
+        // Criando uma formatação de texto :
+        String textFormated = """
+                
+                
+                
+                """;
+
+
+        return super.toString();
+
+
+    }
 }

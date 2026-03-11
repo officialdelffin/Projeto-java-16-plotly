@@ -38,6 +38,7 @@ public class Menu {
                 """);
 
 
+        // Enquanto a escolha do usuário for 2 a query do queryTitle vai rodar :
         while (userChoice == 2) {
 
 
