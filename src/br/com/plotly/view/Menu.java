@@ -2,9 +2,8 @@
 // Pacote :
 package br.com.plotly.view;
 
-
+// Importações :
 import br.com.plotly.exception.QueryException;
-
 import java.io.IOException;
 import java.util.Scanner;
 

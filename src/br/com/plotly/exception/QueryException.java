@@ -35,14 +35,12 @@ public class QueryException {
         // Configurando a request :
         HttpRequest request = HttpRequest.newBuilder()
 
-
                 .uri(URI.create(path))
                 .build();
 
 
         // Pegando os dados da request com o client e convertendo para Json :
         HttpResponse<String> response = client
-
 
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
@@ -51,6 +49,7 @@ public class QueryException {
         responseFinal = response.body();
 
 
+        // Imprimindo para ver se a buscar foi realizada com sucesso :
         System.out.println(responseFinal);
 
 
